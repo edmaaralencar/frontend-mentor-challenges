@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./css/all.css" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+                <nav class="navbar">
+                    <img src="./assets/imgs/logo-bookmark.svg" alt="logo-bookmark">
+                    <a class="toggle-button" href="#"><img src="./assets/imgs/icon-hamburger.svg" alt="icon-hamburger"></a>
+                    <div class="navbar-links">
+
+                        <ul>
+                            <li><a class="oi" href="#hero">Home</a></li>
+                            <li><a class="oi" href="#features">Features</a></li>
+                            <li><a class="oi" href="#download">Download</a></li>
+                            <li><a class="oi" href="#questions">FAQ</a></li>
+                            <li><a class="oi" id="nav-login" href="#email">Contact us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+    </header>
+
+
+    <section id="hero">
+        <div class="hero-container">
+            <img src="./assets/imgs/illustration-features-tab-1.svg" alt="">
+            <div class="hero-text">
+                <h1>A Simple Bookmark Manager</h1>
+                <h3>
+                    A clean and simple interface to organize your favourite websites. Open a new browser tab 
+                    and see your sites load instantly. Try it for free.
+                </h3>
+                <div class="hero-btn">
+                    <button id="btn-google">Get it on Chrome</button>
+                    <button id="btn-firefox">Get it on Firefox</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="features">
+        <div class="container">
+            <div class="features-text">
+                <h2>Features</h2>
+                <h3>
+                    Our aim is to make it quick and easy for you to acess your favourite websites. Your bookmarks sync between your devices so you can
+                    acess them on the go.
+                </h3>
+            </div>
+            <div class="features-type">
+                <div class="features-btn">
+                    <button onclick="changeText()" id="btn-1">Simple Bookmarking</button>
+                    <button onclick="changeText()" id="btn-2">Speedy Searching</button>
+                    <button onclick="changeText()" id="btn-3">Easy Sharing</button>
+                </div>
+
+                <div class="features-content">
+                    <img class="button" id="img" src="./assets/imgs/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+                    <div class="features-content-text">
+                        <h2 id="features-title">Bookmark in one click</h2>
+                        <h3 id="features-desc">
+                            Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage
+                            your favourite sites.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="download">
+        <div class="container">
+            <div class="download-text">
+                <h2>Download the extension</h2>
+                <h3>
+                    We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
+                </h3>
+            </div>
+            <div class="download-cards">
+                <div class="download-card">
+                    <img src="./assets/imgs/logo-chrome.svg" alt="logo-chrome">
+                    <h3 id="download-card-title">Add to Chrome</h3>
+                    <h3>Minimum version 62</h3>
+                    <img src="./assets/imgs/bg-dots.svg" alt="">
+                    <button>Add & Install Extension</button>
+                </div>
+                <div class="download-card">
+                    <img src="./assets/imgs/logo-firefox.svg" alt="logo-chrome">
+                    <h3 id="download-card-title">Add to Firefox</h3>
+                    <h3>Minimum version 62</h3>
+                    <img src="./assets/imgs/bg-dots.svg" alt="">
+                    <button>Add & Install Extension</button>
+                </div>
+                <div class="download-card">
+                    <img src="./assets/imgs/logo-opera.svg" alt="logo-chrome">
+                    <h3 id="download-card-title">Add to Opera</h3>
+                    <h3>Minimum version 62</h3>
+                    <img src="./assets/imgs/bg-dots.svg" alt="">
+                    <button>Add & Install Extension</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="questions">
+        <div class="container">
+            <div class="questions-title">
+                <h2>Frequently asked questions</h2>
+                <h3>
+                    Here are some of ours FAQs. If you have any other questions you'd like answered please feel free to email us.
+                </h3>
+            </div>
+            <div class="questions-btn">
+
+
+                <button onclick="my1Function()">What is bookmark?<img class="img-1" src="./assets/imgs/icon-arrow.svg"  alt=""></button>
+                <div id="btn-1-faq" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam omnis molestiae quia excepturi dolore a autem illum veniam velit totam quos, officiis nemo doloribus quae, non quas error voluptatum.</div>
+
+                <!-- DIVISÃO -->
+
+                <button onclick="my2Function()">How can i request a new browser?<img class="img-2" src="./assets/imgs/icon-arrow.svg"  alt=""></button>
+                <div id="btn-2-faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam omnis molestiae quia excepturi dolore a autem illum veniam velit totam quos, officiis nemo doloribus quae, non quas error voluptatum.</div>
+
+
+                <!-- DIVISÃO -->
+
+
+                <button onclick="my3Function()">Is there a mobile app?<img class="img-3" src="./assets/imgs/icon-arrow.svg"  alt=""></button>
+                <div id="btn-3-faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam omnis molestiae quia excepturi dolore a autem illum veniam velit totam quos, officiis nemo doloribus quae, non quas error voluptatum.</div>
+
+
+                <!-- DIVISÃO -->
+
+
+                <button onclick="my4Function()">What about other Chromium browsers?<img class="img-4" src="./assets/imgs/icon-arrow.svg"  alt=""></button>
+                <div id="btn-4-faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam omnis molestiae quia excepturi dolore a autem illum veniam velit totam quos, officiis nemo doloribus quae, non quas error voluptatum.</div>
+
+
+
+
+            </div>
+            <div class="questions-more-info">
+                <button>More info</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="email">
+        <div class="container">
+            <div class="email-title">
+                <h4>5,000+ already joined</h4>
+                <h2>Stay up-to-date with what we're doing</h2>
+            </div>
+            <div class="email-btn">
+                <input type="text" placeholder="Enter your email adress">
+                <button>Contact us</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/imgs/logo-bookmark-2.svg" alt="">
+                </div>
+                <div class="footer-info">
+                    <p>Features</p>
+                    <p>Pricing</p>
+                    <p>Contact</p>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>     
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>   
+                                 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        function changeText() {
+            
+            const title = document.getElementById("features-title");
+            const img = document.getElementById('img')
+            const desc = document.querySelector('.features-content-text h3');
+
+            // Button 1
+
+            document.getElementById('btn-1').addEventListener('click', () =>
+            title.innerHTML = "Bookmark in one click");
+            document.getElementById('btn-1').addEventListener('click', () =>
+            desc.innerHTML = "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",)   
+            document.getElementById('btn-1').addEventListener('click', () =>
+            img.src = "./assets/imgs/illustration-features-tab-1.svg");
+
+            // Button 2
+
+            document.getElementById('btn-2').addEventListener('click', () =>
+            title.innerHTML = "Intelligence search");
+
+            document.getElementById('btn-2').addEventListener('click', () =>
+            desc.innerHTML = "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.")   
+
+            document.getElementById('btn-2').addEventListener('click', () =>
+            img.src = "./assets/imgs/illustration-features-tab-2.svg");
+
+
+            // Button 3
+
+            document.getElementById('btn-3').addEventListener('click', () =>
+            title.innerHTML = "Share your bookmarks");
+
+            document.getElementById('btn-3').addEventListener('click', () =>
+            desc.innerHTML = "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.")   
+
+            document.getElementById('btn-3').addEventListener('click', () =>
+            img.src = "./assets/imgs/illustration-features-tab-3.svg");
+        }
+
+        /* NavBar */
+
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')})
+
+
+
+
+        const teste = document.getElementsByClassName('oi')[0]
+        const teste1 = document.getElementsByClassName('oi')[1]
+        const teste2 = document.getElementsByClassName('oi')[2]
+        const teste3 = document.getElementsByClassName('oi')[3]
+        const teste4 = document.getElementsByClassName('oi')[4]
+
+
+        teste.addEventListener('click', () => 
+        navbarLinks.classList.remove('active'))
+        
+        teste1.addEventListener('click', () => 
+        navbarLinks.classList.remove('active'))
+        teste2.addEventListener('click', () => 
+        navbarLinks.classList.remove('active'))
+        teste3.addEventListener('click', () => 
+        navbarLinks.classList.remove('active'))
+        teste4.addEventListener('click', () => 
+        navbarLinks.classList.remove('active')) 
+
+
+
+
+
+        /* FAQ */
+
+        function my1Function () {
+
+            let faqbtn1 = document.getElementById("btn-1-faq");
+            let img = document.querySelector(".img-1");
+
+            if(window.getComputedStyle(faqbtn1, null).display == "none") {
+                faqbtn1.style.display = "block";
+                img.src = "./assets/imgs/icon-close.svg";
+            } else {
+                faqbtn1.style.display = "none";
+                img.src = "./assets/imgs/icon-arrow.svg";
+            
+            }
+        }
+
+        function my2Function () {
+
+            let faqbtn1 = document.getElementById("btn-2-faq");
+            let img = document.querySelector(".img-2");
+
+            if(window.getComputedStyle(faqbtn1, null).display == "none") {
+                faqbtn1.style.display = "block";
+                img.src = "./assets/imgs/icon-close.svg";
+            } else {
+                faqbtn1.style.display = "none";
+                img.src = "./assets/imgs/icon-arrow.svg";
+            } 
+        
+        }
+
+        function my3Function () {
+
+            let faqbtn1 = document.getElementById("btn-3-faq");
+            let img = document.querySelector(".img-3");
+
+            if(window.getComputedStyle(faqbtn1, null).display == "none") {
+                faqbtn1.style.display = "block";
+                img.src = "./assets/imgs/icon-close.svg";
+            } else {
+                faqbtn1.style.display = "none";
+                img.src = "./assets/imgs/icon-arrow.svg";
+            } 
+        }
+
+        function my4Function () {
+
+            let faqbtn1 = document.getElementById("btn-4-faq");
+            let img = document.querySelector(".img-4");
+
+            if(window.getComputedStyle(faqbtn1, null).display == "none") {
+                faqbtn1.style.display = "block";
+                img.src = "./assets/imgs/icon-close.svg";
+            } else {
+                faqbtn1.style.display = "none";
+                img.src = "./assets/imgs/icon-arrow.svg";
+            } 
+        }
+
+    </script>
+
+    
+</body>
+</html>
